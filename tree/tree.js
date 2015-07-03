@@ -5,7 +5,7 @@ var Tree = function (value) {
 
 Tree.prototype.addChild = function (value) {
   if (this.children === null) this.children = [];
-  var tree = new Tree(value)
+  var tree = new Tree(value);
   this.children.push(tree);
   return tree;
 };
